@@ -1,0 +1,631 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:wght@400;700&family=Poppins:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    width: auto;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F5F5F5;
+}
+
+
+.header {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    padding: 20px;
+    border-bottom: 2px solid #C6C6C6;
+}
+
+.logo {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.navegacao {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.navegacao_itens {
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+}
+
+#menu {
+    display: none;
+}
+
+.navegacao_itens:hover {
+    color: #B09B71;
+    border-bottom: 3px solid #B09B71;
+}
+
+.icones {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+.icones a img {
+    display: flex;
+    height: 20px;
+}
+
+.home_grid {
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 200px 200px;
+    gap: 10px;
+    padding-top: 50px;
+    margin-right: 70px;
+    margin-bottom: 50px;
+    flex: 1;
+    justify-content: center;
+    height: 500px;
+}
+
+#img_home-1, #img_home-2 {
+    height: 200px;
+    width: 200px;
+}
+
+#img_home-3 {
+    display: grid;
+    height: 200px;
+    width: 410px;
+}
+
+.home {
+    display: flex;
+    flex-direction: row;
+    height: 80vh;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.home_texto {
+    margin-left: 100px;
+    min-width: 400px;
+    max-width: 400px;
+}
+
+.home_texto-titulo {
+    font-size: 30px;
+}
+
+.home_texto-paragrafo {
+    font-size: 16px;
+    padding-right: 55px;
+}
+
+.especial {
+    color: #B09B71;
+}
+
+.shop_image {
+    height: 250px;
+    width: 250px;
+    position: relative;
+}
+
+.favorito {
+    position: absolute;
+    z-index: 1;
+    padding: 10px;
+    height: 20px;
+}
+
+.shop_bloco-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.shop_bloco-1 h2 {
+    font-size: 30px;
+}
+
+.shop_bloco-1 p {
+    font-size: 16px;
+}
+
+.shop_bloco-2 {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    gap: 40px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 30px;
+}
+
+.card_descricao {
+    width: 250px;
+    padding-bottom: 10px;
+    font-size: 13px;
+}
+
+.card_titulo {
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.shop_btn_preco {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card_preco {
+    font-size: 16px;
+}
+
+.btn_buy {
+    background-color: #D8CCA3;
+    border: none;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 25px;
+    font-size: 16px;
+}
+
+.btn_buy:hover {
+    background-color: #B09B71;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.noticia_img img {
+    height: 100%;
+    width: 250px;
+}
+
+.noticia_1 {
+    display: flex;
+    gap: 20px;
+    background-color: white;
+}
+
+.noticia_2 {
+    display: flex;
+    gap: 20px;
+    background-color: white;
+}
+
+.blog {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 7%;
+    margin-right: 7%;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    gap: 30px;
+}
+
+.noticia_conteudo h2 {
+    font-size: 20px;
+}
+
+.noticia_conteudo {
+    padding-top: 16px;
+}
+
+.blog_descricao {
+    font-size: 12px;
+    padding-right: 20px;
+}
+
+.noticia_conteudo h3 {
+    font-size: 12px;
+    padding-top: 5px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 10px
+}
+
+.noticia_conteudo a p {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.read-more {
+    text-decoration: none;
+    color: #B09B71;
+    font-weight: 700;
+}
+
+.about_us {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    justify-content: space-around;
+    height: fit-content;
+    align-items: center;
+    padding-right: 7%;
+    padding-left: 7%;
+}
+
+.about_us-texto h2 {
+    font-size: 60px;
+}
+
+.about_us-texto p {
+    font-size: 16px;
+}
+
+.about_us-img {
+    height: 100%;
+    width: 350px;
+
+}
+
+.about_us-texto button {
+    border: none;
+    background-color: #D8CCA3;
+    padding: 20px;
+    border-radius: 40px;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.about_us-texto button:hover {
+    background-color: #B09B71;
+    transition-duration: 0.4s;
+}
+
+.contact {
+    display: flex;
+    margin-top: 70px;
+    flex-direction: row-reverse;
+    justify-content: center;
+    height: 80vh;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #fff;
+}
+
+.contact .iframe {
+    width: 50%;
+    height: 90%;
+    margin-top: 0px;
+}
+
+.formulario h2 {
+    font-size: 50px;
+    padding-bottom: 10px;
+}
+
+.formulario form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.formulario form input {
+    width: 90%;
+    border-radius: 20px;
+    border: 0.5px solid #D8CCA3;
+    padding: 12px;
+}
+
+#mensagem {
+    padding-bottom: 100px;
+}
+
+.formulario button {
+    border: none;
+    background-color: #D8CCA3;
+    border-radius: 20px;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.formulario button:hover {
+    background-color: #B09B71;
+    transition-duration: 0.4s;
+}
+
+.rodape {
+    display: flex;
+    justify-content: center;
+    height: 10vh;
+    align-items: center;
+    border-top: 2px solid #B09B71;
+}
+
+@media only screen and (max-width: 900px) {
+    .home {
+        display: flex;
+        flex-direction: column;
+        height: max-content;
+        padding-top: 50px;
+    }
+
+    .home_grid {
+        margin-right: 0px;
+    }
+
+    .logo {
+        font-size: 10px;
+    }
+
+    .navegacao_itens {
+        font-size: 13px;
+    }
+
+    .icones a img {
+        height: 16px;
+    }
+
+    .shop_bloco-1 {
+        margin-top: 0px;
+    }
+
+    .shop_bloco-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 200px;
+        gap: 40px;
+        margin-left: 50%;
+        margin-right: 50%;
+    }
+
+    .shop_image {
+        height: 400px;
+        width: 400px;
+    }
+
+    .card_descricao {
+        width: 400px;
+        font-size: 14px;
+        padding-bottom: 20px;
+    }
+    
+    .card_titulo {
+        font-size: 20px;
+    }
+    
+    .card_preco {
+        font-size: 25px;
+    }
+    
+    .btn_buy {
+        font-size: 20px;
+    }
+
+    .noticia_img img {
+        height: 100%;
+        width: 200px;
+    }
+    
+    .noticia_1 {
+        height: 200px;
+    }
+    
+    .noticia_2 {
+        height: 200px;
+    }
+    
+    .noticia_conteudo h2 {
+        font-size: 15px;
+    }
+
+    .noticia_conteudo a p {
+        padding-bottom: 0px;
+        padding-top: 5px;
+    }
+    
+    .blog_descricao {
+        font-size: 10px;
+        padding-right: 20px;
+        min-width: 300px;
+    }
+    
+    .noticia_conteudo h3 {
+        font-size: 10px;
+    }
+    
+    .read-more {
+        font-size: 13px;
+    }
+
+    .about_us {
+        display: flex;
+        flex-direction: column;
+        padding-right: 15%;
+        padding-left: 20%;
+    }
+    
+    .about_us-img {
+        height: 500px;
+        width: 500px;
+    
+    }
+    
+    .about_us-texto button {
+        width: 100%;
+    }
+    
+    .formulario h2 {
+        font-size: 30px;
+    }
+    
+    .formulario form input {
+        padding: 9px;
+        font-size: 10px;
+    }
+
+    .label {
+        font-size: 13px;
+    }
+    
+    .formulario button {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 570px) {
+    .navegacao_itens {
+        text-decoration: none;
+        color: black;
+        font-size: 8px;
+    }
+
+    #menu {
+        display: flex;
+    }
+
+    .navegacao_itens {
+        display: none;
+    }
+
+    .home_texto {
+        margin-left: 0px;
+        max-width: 150px;
+        min-width: 200px;
+        padding: 0;
+    }
+
+    .home_texto-titulo {
+        font-size: 20px;
+        padding-bottom: 10px;
+    }
+
+    .home_grid {
+        display: grid;
+        grid-template-columns: 130px 130px;
+        grid-template-rows: 130px 130px;
+    }
+    
+    #img_home-1, #img_home-2 {
+        height: 130px;
+        width: 130px;
+    }
+    
+    #img_home-3 {
+        display: grid;
+        height: 130px;
+        width: 270px;
+    }
+
+    .home_texto-paragrafo {
+        font-size: 12px;
+        padding-right: 0px;
+        max-width: 310px;
+    }
+
+    .shop_image {
+        height: 220px;
+        width: 220px;
+        position: relative;
+    }
+
+    .card_descricao {
+        width: 210px;
+        font-size: 10px;
+    }
+    
+    .card_titulo {
+        font-size: 18px;
+    }
+    
+    .card_preco {
+        font-size: 16px;
+    }
+    
+    .btn_buy {
+        font-size: 12px;
+    }
+    
+    .shop_bloco-1 h2 {
+        text-align: center;
+        padding-bottom: 6px;
+        font-size: 30px;
+    }
+    
+    .shop_bloco-1 p {
+        font-size: 10px;
+        text-align: center;
+    }
+    
+    .about_us-texto h2 {
+        font-size: 40px;
+    }
+    
+    .about_us-texto p {
+        font-size: 12px;
+    }
+    
+    .about_us-img {
+        height: 100%;
+        width: 250px;
+    }
+
+    .about_us-texto button {
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        gap: 40px;
+    }
+
+    .contact .iframe {
+        width: 100%;
+    }
+
+    .formulario h2 {
+        font-size: 30px;
+        padding-top: 30px;
+    }
+    
+    .rodape {
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .noticia_img img {
+        width: 100%;
+    }
+    
+    .noticia_1 {
+        display: inline-table;
+    }
+    
+    .noticia_2 {
+        display: inline-table;
+    }
+
+    .noticia_conteudo {
+        padding: 10px;
+    }
+
+}
